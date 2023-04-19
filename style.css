@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+    position: static;
+    box-shadow: 0 0 10px orangered;
+    left: 0;
+    z-index: 100;
+}
+
+.logo img{
+    width: 100px;
+    
+}
+
+
+/*menu design*/
+.menu ul{
+    list-style: none;
+}
+.menu li{
+    display: inline-block;
+    padding: 0 30px;
+}
+.menu li a{
+    text-decoration: none;
+    color: darkblue;
+    font-size: larger;
+    cursor: pointer;
+    font-weight: 700;
+}
+.menu li a:hover{
+    color: orangered;
+}
+
+/*button*/
+.fiction_book h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+.fiction_book h1 a{
+    text-decoration: none;
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: bisque;
+    color: darkblue;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fiction_book h1 a:hover{
+    background-color: orangered;
+    box-shadow: 0 0 20px #6fc5ff50;
+    color: white;
+}
+.fiction_book h1 a:active{
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+}
