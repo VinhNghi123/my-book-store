@@ -16,7 +16,6 @@
 
 .logo img{
     width: 100px;
-    
 }
 
 
@@ -200,6 +199,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px orangered;
 }
 .footer footer ul li{
     display: inline-block;
@@ -221,4 +221,24 @@
     align-items: center;
     justify-content: center;
     top: 30px
+}
+footer .social_icon{
+    text-align: center;
+    padding-bottom: 25px;
+    color: darkblue;
+}
+footer .social_icon a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid darkblue;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0px 20px;
+    opacity: 1;
+}
+footer .social_icon a:hover{
+    opacity: 0.5;
 }
