@@ -14,7 +14,9 @@ body{
     background: whitesmoke;
 }
 .header{
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 20;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -269,31 +271,32 @@ body{
     width: 100%;
 }
  /*footer*/
- .footer {
+ footer {
     position: relative;
     width: 100%;
     background: bisque;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px orangered;
   }
-  .footer footer ul li{
+   footer ul li{
     display: inline-block;
     padding: 0 30px;
   }
-  .footer footer ul li a{
+   footer ul li a{
     text-decoration: none;
     font-size: larger;
     font-weight: 700;
     color: darkblue;
     cursor: pointer;
   }
-  .footer footer ul li a:hover{
+  footer ul li a:hover{
     color: orangered;
   }
-  .footer footer p{
+  footer p{
     position: relative;
     display: flex;
     align-items: center;

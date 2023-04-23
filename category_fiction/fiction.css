@@ -13,7 +13,9 @@ body{
     background: whitesmoke;
 }
 .header{
-    position: relative;
+    position: fixed;
+    z-index: 20;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -229,7 +231,7 @@ body{
 }
 
  /*footer*/
- .footer {
+ footer {
     position: relative;
     width: 100%;
     background: bisque;
@@ -240,21 +242,21 @@ body{
     box-shadow: 0 0 10px orangered;
     margin-top: 20px;
   }
-  .footer footer ul li{
+   footer ul li{
     display: inline-block;
     padding: 0 30px;
   }
-  .footer footer ul li a{
+  footer ul li a{
     text-decoration: none;
     font-size: larger;
     font-weight: 700;
     color: darkblue;
     cursor: pointer;
   }
-  .footer footer ul li a:hover{
+   footer ul li a:hover{
     color: orangered;
   }
-  .footer footer p{
+     footer p{
     position: relative;
     display: flex;
     align-items: center;
