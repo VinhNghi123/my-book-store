@@ -5,10 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css" type="text/css"/>
+    <link rel="shortcut icon" href="../assets/book2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <title>Contact page</title>
 </head>
+<header class="header"><!--header section-->
+    <div class="logo">
+      <a href="../home_page/index.html">
+      <img src="../assets/book2.png" alt="Book logo" />
+      </a>
+    </div>
+    <div class="navigation">
+      <input type="checkbox" class="toggle-menu">
+      <div class="hamburger"></div>
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../category_fiction/index.html">Fiction</a></li>
+        <li><a href="../category_nonfiction/index.html">Non-fiction</a></li>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </div>
+  </header>
 <body>
+  <h1>Contac Us</h1>
+  <form class="form">
+    <label for="contact-purpose">Contact Purpose:</label>
+		<select name="contact-purpose" id="contact-purpose" required>
+			<option value="">Please select one</option>
+			<option value="sell-books">I want to sell books</option>
+			<option value="buy-books">I want to buy books</option>
+		</select>
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name" required>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" required>
+		<label for="phone">Phone:</label>
+		<input type="tel" name="phone" id="phone" required>
+		<label>Contact Preference:</label>
+		<input type="checkbox" name="contact-preference[]" value="by-email" id="by-email">
+		<label for="by-email">By email</label>
+		<input type="checkbox" name="contact-preference[]" value="by-phone" id="by-phone">
+		<label for="by-phone">By phone</label>
+		<label>Receive Weekly Newsletter:</label>
+		<input type="radio" name="newsletter" value="yes" id="newsletter-yes" checked>
+		<label for="newsletter-yes">Yes</label>
+		<input type="radio" name="newsletter" value="no" id="newsletter-no">
+		<label for="newsletter-no">No</label>
+		<label for="extra-notes">Extra Notes:</label>
+		<textarea name="extra-notes" id="extra-notes"></textarea>
+    <div class="button">
+      <button>Submit</button>
+      <button>Reset</button>
+    </div>
+  </form>
     
 </body>
 </html>

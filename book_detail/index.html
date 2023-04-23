@@ -5,29 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bookdetail.css" type="text/css"/>
+    <link rel="shortcut icon" href="../assets/book2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Book detail page</title>
 </head>
-<body>
-    <!--header section-->
-    <div class="menu">
-        <div class="logo">
-          <a href="../index.html">
-          <img src="../assets/book2.png" alt="Book logo" />
-        </a>
-        </div>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="index.html">Fiction</a></li>
-          <li><a href="../category_nonfiction/index.html">Non-fiction</a></li>
-        </ul>
+<header class="header"><!--header section-->
+    <div class="logo">
+      <a href="../home_page/index.html">
+      <img src="../assets/book2.png" alt="Book logo" />
+      </a>
     </div>
+    <div class="navigation">
+      <input type="checkbox" class="toggle-menu">
+      <div class="hamburger"></div>
+      <ul class="menu">
+        <li><a href="../home_page/index.html">Home</a></li>
+        <li><a href="../category_fiction/index.html">Fiction</a></li>
+        <li><a href="../category_nonfiction/index.html">Non-fiction</a></li>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </div>
+  </header>
+<body>
+    <!--breadcrumbs-->
     <div class="breadcrumbs_container">
         <nav class="breadcrumbs">
-            <a href="../index.html" class="breadcrumbs__item">Home</a>
+            <a href="../home_page/index.html" class="breadcrumbs__item">Home</a>
             <a href="../category_fiction/index.html" class="breadcrumbs__item">Fiction</a> 
             <a href="index.html" class="breadcrumbs__item is-active">Age Of Vice</a> 
         </nav>
     </div>
+
+    <!--detail section-->
+    <div class="detail">
+        <div class="big_book_pic">
+            <img src="../assets/AOV.png" alt="Age Of Vice main picture">
+        </div>
+        <div class="small_book_pic">
+            <img src="../assets/AOV1.png" alt="Another picture of AOV book">
+            <img src="https://th.bing.com/th/id/OIP.3ka6qJ13bGjwjhyWpF-rwAHaLG?pid=ImgDet&rs=1" alt="Another picture of AOV book">
+            <img src="https://th.bing.com/th/id/OIP.657tZ-r0e9Z14N0KgQHf9AAAAA?pid=ImgDet&rs=1" alt="Another picture of AOV book">
+        </div>
+        <div class="price_card">
+            <h1>AGE OF VICE</h1>
+            <h2>$20.09</h2>
+            <button class="btn">
+                <span>ADD TO CART</span>
+            </button>
+        </div>
+    </div>
+    <div class="description">
+        <h1>Description:</h1>
+        <p><br><b> A Most Anticipated Book of the Year by Town & Country and Good Housekeeping!</b><br>
+
+            <br><b>This is the age of vice, where money, pleasure, and power are everything, and the family ties that bind can also kill.<br></b>
+            
+            <br> 3 a.m. A speeding Mercedes jumps the curb and in the blink of an eye, five people are dead. It’s a rich man’s car, but when the dust settles there is no rich man at all, just a shell-shocked servant who cannot explain the strange series of events that led to this crime. Nor can he foresee the dark drama that is about to unfold.<br>
+            
+           <br>Deftly shifting through time and perspective in contemporary India, Age of Vice is an epic, action-packed story propelled by the seductive wealth, startling corruption, and bloodthirsty violence of the Wadia family—loved by some, loathed by others, feared by all. <br>
+            
+           <br>In the shadow of lavish estates, extravagant parties, predatory business deals and calculated political influence, three lives become dangerously intertwined: Ajay is the watchful servant, born into poverty, who rises through the family’s ranks. Sunny is the playboy heir who dreams of outshining his father, whatever the cost. And Neda is the curious journalist caught between morality and desire. Against a sweeping plot fueled by loss, pleasure, greed, yearning, violence and revenge, will these characters’ connections become a path to escape, or a trigger of further destruction? <br>
+            
+            <br>Equal parts crime thriller and family saga, transporting listeners from the dusty villages of Uttar Pradesh to the urban energy of New Delhi, Age of Vice is an intoxicating novel of gangsters and lovers, false friendships, forbidden romance, and the consequences of corruption. It is binge-worthy entertainment at its literary best.</p>
+    </div>
+    <video src="../assets/AOVvid.mp4" autoplay loop muted></video>
+     <!--Footer-->
+     <div class="footer">
+        <footer>
+          <div class="social_icon">
+            <a href="https://www.instagram.com/bimm_runii/?fbclid=IwAR1SfpKKlwPuKtz0hVrmkcO2U2I7sFAWMlkebrky_-vlPdQRv38AmA8CND4"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/bimrooney"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/Jihyoisthebest/"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/VinhNghi123/my-book-store"><i class="fab fa-github"></i></a>
+          </div>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="contact_us/index.html">Contact Us</a></li>
+          </ul>
+          <p>Book Store @ All Rights Reserved</p>
+        </footer>
+      </div>
 </body>
 </html>

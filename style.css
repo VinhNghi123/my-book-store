@@ -1,244 +1,105 @@
 *{
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Poppins', sans-serif;
 }
 .menu{
     width: 100%;
+    height: 100vh;
+    padding: 0 5%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    background-color: bisque;
-    position: static;
-    box-shadow: 0 0 10px orangered;
-    left: 0;
-    z-index: 100;
+    justify-content: center;
 }
-
-.logo img{
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
     width: 100px;
 }
-
-
-/*menu design*/
-.menu ul{
+nav ul li{
     list-style: none;
-}
-.menu li{
     display: inline-block;
-    padding: 0 30px;
+    margin-left: 40px;
 }
-.menu li a{
+nav ul li a{
     text-decoration: none;
-    color: darkblue;
-    font-size: larger;
-    cursor: pointer;
-    font-weight: 700;
-}
-.menu li a:hover{
-    color: orangered;
-}
-
-/*button*/
-.category_book h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 50px;
-}
-.category_book h1 a{
-    text-decoration: none;
-    padding: 12.5px 30px;
-    border: 0;
-    border-radius: 100px;
-    background-color: bisque;
-    color: darkblue;
-    font-weight: Bold;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.category_book h1 a:hover{
-    background-color: orangered;
-    box-shadow: 0 0 20px #6fc5ff50;
     color: white;
-}
-.category_book h1 a:active{
-    background-color: #3d94cf;
-    transition: all 0.25s;
-    -webkit-transition: all 0.25s;
-    box-shadow: none;
-}
-
-/*Fiction-Books cards*/
-.book_box{
-    width: 75%;
-    height: 40vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 10px solid transparent;
-    border-image: url(https://www.w3schools.com/css/border.png) 30 stretch;
-}
-.book_card{
-    position: relative;
-    width: 11.875em;
-    height: 16.5em;
-    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: all 120ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: bisque;
-    padding: 0.5em;
-    padding-bottom: 3.4em;
-    top: 19px;
-    left: 0px;
-}
-.book_card::after{
-    content: "CLICK FOR MORE";
-    padding-top: 1.25em;
-    padding-left: 1.25em;
-    position: absolute;
-    left: 0;
-    bottom: -60px;
-    background: #E86A33;
-    color: #fff;
-    height: 2.2em;
-    width: 90%;
-    transition: all 80ms;
-    font-weight: 600;
-    text-transform: uppercase;
-    opacity: 0;
-}
-.book_card .Title{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-    position: absolute;
-    left: 0.625em;
-    bottom: 1.775em;
-    font-weight: 500;
-    color: #000;
-}
-.book_card .Price{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 0.9em;
-    position: absolute;
-    left: 0.625em;
-    bottom: 0.525em;
-    color: #000;
-}
-
-.book_card:hover::after{
-    bottom: 0;
-    opacity: 1;
-}
-.image img{
-    background: rgb(241, 241, 241);
-    width: 99%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    object-fit: cover;
-    object-position: center;
-    transition: 0.3s;
-}
-.image:hover img{
-    transform: scale(1.1);
-}
-/*video section*/
-.wrapper h1{
-    padding: 12.5px 30px;
-    border: 0;
-    border-radius: 10px;
-    background-color: bisque;
-    color: darkblue;
-    font-weight: Bold;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: relative;
-    top: -15px;
-    display: flex;
-    justify-content: center;
-}
-.wrapper{
-    margin: 0 auto;
-    position: relative;
-    top: 50px;
-    width: 75%;
-    height: 80vh;
-    border: 10px solid transparent;
-    border-image: url(https://www.w3schools.com/css/border.png) 30 stretch;
-}
-.videowrapper{
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0px;
-    top: 0px;
-}
-.videowrapper iframe{
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    height: 90%;
-    width: 100%;
-}
-/*footer*/
-.footer {
-    position: relative;
-    width: 100%;
-    top: 100px;
-    background: bisque;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 10px orangered;
-}
-.footer footer ul li{
-    display: inline-block;
-    padding: 0 30px;
-}
-.footer footer ul li a{
-    text-decoration: none;
-    font-size: larger;
+    font-size: 20px;
     font-weight: 700;
-    color: darkblue;
-    cursor: pointer;
 }
-.footer footer ul li a:hover{
+nav ul li a:hover{
     color: orangered;
 }
-.footer footer p{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 30px
-}
-footer .social_icon{
+.content{
     text-align: center;
-    padding-bottom: 25px;
-    color: darkblue;
 }
-footer .social_icon a{
-    font-size: 24px;
-    color: inherit;
-    border: 1px solid darkblue;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
+.content h1{
+    font-size: 160px;
+    color: white;
+    font-weight: 600;
+    background: -webkit-linear-gradient(bisque, orangered);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content a{
+    text-decoration: none;
     display: inline-block;
-    border-radius: 50%;
-    margin: 0px 20px;
-    opacity: 1;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
 }
-footer .social_icon a:hover{
-    opacity: 0.5;
+.content a:hover{
+    color: orange;
+    border: 2px solid orangered;
 }
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/*responsive*/
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1015px){
+    .menu .content h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 500%;
+    }
+}   
+@media screen and (max-width: 500px){
+    .menu .content h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 360%;
+    }
+    .menu ul li a{
+        display: none;
+    }
+}   
