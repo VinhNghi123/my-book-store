@@ -118,60 +118,181 @@ h1{
   margin-top: 20px;
   margin-bottom:20px;
 }
-.form {
+form{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  border: 10px solid transparent;
+    border-image: url(https://www.w3schools.com/css/border.png) 30 round;
   padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  font-family: Arial, sans-serif;
 }
-
-label {
-  margin-bottom: 10px;
-  font-weight: bold;
+.contact_purpose{
+  display: flex;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.contact_purpose label{
+  width: 70%;
+  display: block;
+}
+.contact_purpose select{
+  background: bisque;
+  border: none;
+  width: 100%;
+}
+.user_info{
+  display: flex;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.user_info label{
+  width: 70%;
+  display: block;
+}
+.user_info input{
+  background: bisque;
+  border: none;
+  width: 100%;
+}
+.contact_pref{
+  display: flex;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.contact_pref label{
+  width: 70%;
   display: block;
 }
 
-input[type=text], input[type=email], input[type=tel], textarea {
-  width: 100%;
+.checkbox_card{
+  display: flex;;
+  width: 70%;
+}
+.news{
+  display: flex;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.news label{
+  width: 70%;
+}
+.radio_card{
+  width: 70%;
+  display: flex;
+}
+.extra_note{
+  display: flex;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.extra_note label{
+  width: 70%;
+}
+.extra_note textarea{
+  resize: none;
+  border: none;
   padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
-  background-color: #fff;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
+  background: bisque;
+  width: 100%;
 }
-
-input[type=checkbox], input[type=radio] {
-  margin-right: 5px;
-  vertical-align: middle;
+.btn{
+  margin: 0;
+  text-align: center;
 }
-
-.submit-btn, .reset-btn {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+.btn button{
+  width: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn button:hover{
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn button:focus{
+  outline: none;
+}
+.btn button{
+  background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+/*footer*/
+.footer {
+  position: relative;
+  width: 100%;
+  background: bisque;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px orangered;
+  margin-top: 20px;
+}
+.footer footer ul li{
+  display: inline-block;
+  padding: 0 30px;
+}
+.footer footer ul li a{
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 700;
+  color: darkblue;
   cursor: pointer;
 }
-
-.reset-btn {
-  background-color: #f44336;
-  margin-left: 10px;
+.footer footer ul li a:hover{
+  color: orangered;
+}
+.footer footer p{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+footer .social_icon{
+  text-align: center;
+  padding-bottom: 25px;
+  color: darkblue;
+  padding-top: 5px ;
+}
+footer .social_icon a{
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid darkblue;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0px 20px;
+  opacity: 1;
+}
+footer .social_icon a:hover{
+  opacity: 0.5;
 }
 
-@media (max-width: 768px) {
-  label, input, textarea, select {
-    display: block;
-    width: 100%;
-  }
-}
 /*responsive*/
 @media screen and (max-width: 960px){
     .hamburger,.toggle-menu{
@@ -200,5 +321,42 @@ input[type=checkbox], input[type=radio] {
         font-size: 24px;
         box-shadow: 0 1px 0 rgba(255, 69, 0, 0.1) inset;
     }
-    
+    form{
+      padding: 15px;
+      width: 90%;
+    }
+    .contact_purpose{
+      width: 100%;
+      flex-direction: column;
+    }
+    .contact_purpose label{
+      width: 100%;
+    }
+    .contact_purpose select{
+      width: 100%;
+    }
+    .user_info{
+      width: 100%;
+      flex-direction: column;
+    }
+    .user_info label{
+      width: 100%;
+    }
+    .user_info input{
+      width: 100%;
+    }
+    .contact_pref{
+      width: 100%;
+    }
+    .news{
+      width: 100%;
+    }
+    .extra_note{
+      width: 99%;
+      flex-direction: column;
+
+    }
+    .extra_note textarea{
+      width: 99%;
+    }
 }
