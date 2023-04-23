@@ -13,7 +13,7 @@ body{
     background: whitesmoke;
 }
 .header{
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 20;
     width: 100%;
@@ -232,6 +232,7 @@ body{
 }
 
  /*footer*/
+ /*footer*/
  footer {
     position: relative;
     width: 100%;
@@ -242,6 +243,7 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px orangered;
+    margin-top: 20px;
   }
    footer ul li{
     display: inline-block;
@@ -257,7 +259,7 @@ body{
   footer ul li a:hover{
     color: orangered;
   }
-   footer p{
+  footer p{
     position: relative;
     display: flex;
     align-items: center;
@@ -268,7 +270,7 @@ body{
     text-align: center;
     padding-bottom: 25px;
     color: darkblue;
-    padding-top: 5px;
+    padding-top: 5px ;
   }
   footer .social_icon a{
     font-size: 24px;
